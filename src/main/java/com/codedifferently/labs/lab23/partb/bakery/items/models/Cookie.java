@@ -1,6 +1,8 @@
-package com.codedifferently.labs.lab23.partb.bakery.items;
+package com.codedifferently.labs.lab23.partb.bakery.items.models;
 
-public class Cookie implements Item{
+import com.codedifferently.labs.lab23.partb.bakery.items.interfaces.Item;
+
+public class Cookie implements Item {
     public String cookieType;
     private double price;
     public Cookie(String type, double price){
@@ -24,7 +26,4 @@ public class Cookie implements Item{
         return "Bakery";
     }
 
-    public String getType() {
-        return cookieType;
-    }
 }
